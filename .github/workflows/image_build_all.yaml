@@ -22,14 +22,12 @@ jobs:
           format: '25.MM'
       -
         id: image-build
-        uses: manjaro-arm/rootfs@master
+        uses: supdrewin/manjaro-arm-rootfs@master
         with:
           device: ${{ matrix.device }}
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           version: ${{ steps.time.outputs.time }}
-          #gpg-key: ${{ secrets.CI_GPG_SECRET }}
-          #gpg-passphrase: ${{ secrets.CI_GPG_PASSPHRASE }}
       -
         name: Release assets
         uses: softprops/action-gh-release@v2
@@ -43,6 +41,3 @@ jobs:
           files: |
             ${{ env.FILE_PATH }}
             ${{ env.FILE_SHA256 }}
-            ${{ env.FILE_TORRENT }}
-            ${{ env.FILE_PKG }}
-            #${{ env.FILE_SIG }}
