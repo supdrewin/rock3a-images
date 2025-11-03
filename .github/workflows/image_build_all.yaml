@@ -12,8 +12,8 @@ jobs:
     strategy:
       matrix:
         DEVICE: [rock3a]
-        EDITION: [gnome,kde-plasma,mate,minimal,sway,xfce]
-        BRANCH: [stable]
+        EDITION: [kde-plasma]
+        BRANCH: [testing]
     steps:
       -
         id: time
@@ -22,7 +22,7 @@ jobs:
           format: '25.MM'
       -
         id: image-build
-        uses: supdrewin/manjaro-arm-rootfs@master
+        uses: manjaro-arm/rootfs@master
         with:
           device: ${{ matrix.device }}
           edition: ${{ matrix.edition }}
@@ -40,4 +40,3 @@ jobs:
           prerelease: false
           files: |
             ${{ env.FILE_PATH }}
-            ${{ env.FILE_SHA256 }}
