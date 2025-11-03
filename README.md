@@ -1,5 +1,5 @@
 # Manjaro ARM Radxa Rock3A
-[![iso_build](https://github.com/manjaro-arm/rock3-a-images/workflows/image_build_all/badge.svg)](https://github.com/manjaro-arm/rock3-a-images/actions)
+[![iso_build](https://github.com/supdrewin/rock3-a-images/workflows/image_build_all/badge.svg)](https://github.com/supdrewin/rock3-a-images/actions)
 
 ## description
 
@@ -7,7 +7,7 @@ Release Branch for Manjaro ARM images for the Radxa Rock3A
 
 ## where can I download an image?
 
-Images are build and uploaded to [github releases](https://github.com/manjaro-arm/rock3-a-images/releases)
+Images are build and uploaded to [github releases](https://github.com/supdrewin/rock3-a-images/releases)
 
 ## sources
 
