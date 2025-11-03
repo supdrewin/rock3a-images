@@ -1,5 +1,5 @@
 # Manjaro ARM Radxa Rock3A
-[![iso_build](https://github.com/supdrewin/rock3-a-images/workflows/image_build_all/badge.svg)](https://github.com/supdrewin/rock3-a-images/actions)
+[![iso_build](https://github.com/supdrewin/rock3a-images/workflows/image_build_all/badge.svg)](https://github.com/supdrewin/rock3a-images/actions)
 
 ## description
 
